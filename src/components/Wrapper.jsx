@@ -48,18 +48,20 @@ export function Wrapper() {
         <TableCard
           title={'Planos'}
           sub={'123 planos ativos'}
-          tableData={data.tableDataA}            
-          // tableData={data}            
-        />
+          tableData={data.tableDataA}
+          tableHeader={'PREÇO'}                        
+          />
         <TableCard
           title={'Categorias'}
           sub={'4 categorias em uso'} 
           tableData={data.tableDataB}
+          tableHeader={'PREÇO MÉDIO'}                        
         />
         <TableCard
           title={'Tipos de planos'}
           sub={'2 tipos em uso'} 
           tableData={data.tableDataC}
+          tableHeader={'PREÇO MÉDIO'}                        
         />
       </div>
     </div>

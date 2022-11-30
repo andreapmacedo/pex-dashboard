@@ -1,7 +1,7 @@
 import styles from './GenericTable.module.css';
 import { FormatPtBr } from '../utils';
 
-export function GenericTable({ tableData }) {
+export function GenericTable({ tableData, tableHeader }) {
 
   function geRows() {
     return (
@@ -28,7 +28,7 @@ export function GenericTable({ tableData }) {
           <tr>
             <th>CLUBE</th>
             <th>CLIENTES</th>
-            <th>PREÇO</th>
+            <th>{ tableHeader }</th>
           </tr>
         </thead>
         {/* <hr /> */}

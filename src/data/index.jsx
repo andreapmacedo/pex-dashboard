@@ -148,17 +148,17 @@ export const tableDataA = [
 
 export const tableDataB = [
   {
-    club: 6,
+    club: '6 vendas',
     customers: 312,
     value: 123.90,
   },
   {
-    club: 12,
+    club: '12 vendas',
     customers: 312,
     value: 123.90,
   },
   {
-    club: 24,
+    club: '24 vendas',
     customers: 312,
     value: 123.90,
   },
