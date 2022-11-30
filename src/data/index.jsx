@@ -29,7 +29,7 @@ export const menuElements = [
 
 export const bigBalance = [
   {
-    title: 'lucro total',
+    title: 'receita total',
     amount: 10000,
     avarage: 1000,
   },
@@ -39,8 +39,118 @@ export const bigBalance = [
     avarage: 1000,
   },
   {
-    title: 'lucro total',
+    title: 'lucro por venda',
     amount: 10000,
     avarage: 1000,
+  },
+];
+
+export const smallBalance = [
+  {
+    title: 'Clientes ativos',
+    amount: 10000,
+    percent: 2.6,
+  },
+  {
+    title: 'Novos clientes',
+    amount: 10000,
+    percent: 15.3,
+  },
+  {
+    title: 'Clientes adicionados',
+    amount: 10000,
+    percent: 42.6,
+  },
+  {
+    title: 'LTV',
+    amount: 10000,
+    percent: -22.6,
+  },
+  {
+    title: 'Turnover',
+    amount: 10000,
+    percent: 42.6,
+  },
+  {
+    title: 'Turnover recuperado',
+    amount: 10000,
+    percent: 32.6,
+  },
+];
+
+export const midBalance = [
+  {
+    title: 'lucro total',
+    amount: 10000,
+    percent: 0.5,
+  },
+  {
+    title: 'lucro total',
+    amount: 10000,
+    percent: 0.6,
+  },
+  {
+    title: 'lucro total',
+    amount: 10000,
+    percent: 0.3,
+  },
+];
+
+export const tableDataA = [
+  {
+    club: 'Estagiários',
+    customers: 312,
+    value: 123.90,
+  },
+  {
+    club: 'Diretoria',
+    customers: 312,
+    value: 123.90,
+  },
+  {
+    club: 'Geral',
+    customers: 312,
+    value: 123.90,
+  },
+  {
+    club: 'Almoxarifado',
+    customers: 312,
+    value: 123.90,
+  },
+];
+
+export const tableDataB = [
+  {
+    club: 6,
+    customers: 312,
+    value: 123.90,
+  },
+  {
+    club: 12,
+    customers: 312,
+    value: 123.90,
+  },
+  {
+    club: 24,
+    customers: 312,
+    value: 123.90,
+  },
+  {
+    club: 'Personalizado',
+    customers: 312,
+    value: 123.90,
+  },
+];
+
+export const tableDataC = [
+  {
+    club: 'Construtoras',
+    customers: 312,
+    value: 123.90,
+  },
+  {
+    club: 'Clientes finais',
+    customers: 312,
+    value: 123.90,
   },
 ];
