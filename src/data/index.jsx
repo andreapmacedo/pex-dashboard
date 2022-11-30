@@ -29,22 +29,22 @@ export const menuElements = [
 
 export const bigBalance = [
   {
-    title: 'receita total',
+    title: 'Receita total',
     amount: 312321,
     avarage: 67.2,
-    cardColor: 'red'
+    cardColor: '#EC7A7A'
   },
   {
-    title: 'lucro total',
+    title: 'Lucro total',
     amount: 74421,
     avarage: 42.3,
-    cardColor: 'blue'
+    cardColor: '#7A85EC'
   },
   {
-    title: 'lucro por venda',
+    title: 'Lucro por venda',
     amount: 3.12,
     avarage: 12.4,
-    cardColor: 'green'
+    cardColor: '#65D4AC'
   },
 ];
 

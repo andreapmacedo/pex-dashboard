@@ -11,7 +11,6 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <Wrapper />
-        <h1>Hello Worldd</h1>
       </div>
     </>
   )
