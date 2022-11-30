@@ -1,0 +1,74 @@
+.genericTable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 16px;
+  min-width: 32.25rem;
+  min-height: 22rem;
+  gap: 1rem;
+}
+
+.genericTable h2 {
+  color: var(--blue-800);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.genericTable h4 {
+  color: var(--gray-400);
+  padding-left: 2rem;
+  font-size: 0.8rem;
+}
+
+.genericTable table {
+  color: var(--gray-400);
+  padding-top: 2rem;
+  width: 100%;
+}
+
+.genericTable th {
+  color: var(--gray-400);
+  font-size: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-200);
+  padding: 0.5rem 1rem;
+}
+
+.genericTable th:nth-child(2) {
+  color: var(--gray-400);
+  text-align: right;
+  
+}
+
+.genericTable th:nth-child(3) {
+  color: var(--gray-400);
+  text-align: right; 
+}
+
+.genericTable td {
+  color: var(--blue-800);
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.genericTable td:nth-child(2) {
+  text-align: right;
+}
+
+
+.genericTable td:nth-child(3) {
+  text-align: right;
+}
+
+
+.genericTable hr{
+  /* color: var(--white); */
+  /* padding: 1rem 0; */
+  width: 100%;
+  min-width: 32.25rem;
+  /* border-color: var(--white); */
+}

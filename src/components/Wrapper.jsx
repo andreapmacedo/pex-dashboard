@@ -33,45 +33,34 @@ export function Wrapper() {
         ))}
       </div>
       <div className={styles.wrapperIn}>
-        {data.midBalance.map(({ title, amount, value, percent }, index) => (
+        {data.midBalance.map(({ title, amount, value, extraData, percent }, index) => (
           <MidBalanceCard
             key={index} 
             title={title}
             amount={amount}
             value={value}
+            extraData={extraData}
             percent={percent} 
           />
         ))}
       </div>
       <div className={styles.wrapperIn}>
-        {data.tableDataA.map(({ club, customers, value }, index) => (
-          <TableCard
-            key={index} 
-            club={club}
-            customers={customers}
-            value={value} 
-          />
-        ))}
-      </div>
-      <div className={styles.wrapperIn}>
-        {data.tableDataB.map(({ club, customers, value }, index) => (
-          <TableCard
-            key={index} 
-            club={club}
-            customers={customers}
-            value={value} 
-          />
-        ))}
-      </div>
-      <div className={styles.wrapperIn}>
-        {data.tableDataC.map(({ club, customers, value }, index) => (
-          <TableCard
-            key={index} 
-            club={club}
-            customers={customers}
-            value={value} 
-          />
-        ))}
+        <TableCard
+          title={'Planos'}
+          sub={'123 planos ativos'}
+          tableData={data.tableDataA}            
+          // tableData={data}            
+        />
+        <TableCard
+          title={'Categorias'}
+          sub={'4 categorias em uso'} 
+          tableData={data.tableDataB}
+        />
+        <TableCard
+          title={'Tipos de planos'}
+          sub={'2 tipos em uso'} 
+          tableData={data.tableDataC}
+        />
       </div>
     </div>
   );

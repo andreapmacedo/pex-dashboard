@@ -2,6 +2,7 @@
   background-color: var(--white);
   border-radius: 16px;
   min-width: 24.1875rem;
+  /* min-width: 23.875rem; */
   min-height: 12.25rem;
   gap: 1rem;
 }

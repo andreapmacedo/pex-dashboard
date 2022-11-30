@@ -6,8 +6,10 @@ export function MidBalanceCard({ title, amount, percent, value, extraData }) {
   return (
     <div className={styles.midBalanceCard}>
       <img src={dollar_icon} alt={'icon dollar'} />
-      <h2>{amount}</h2>
-      {extraData && <p>{extraData}</p>}
+      <div className={styles.amountContainer}>
+        <h2>{amount}</h2>
+        {extraData && <p>{extraData}</p>}
+      </div>
       <h4>{title}</h4>
       <div className={styles.percentContainer}>
         <p className={styles.green}>{`+${percent}%`}</p>
