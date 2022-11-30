@@ -8,12 +8,13 @@ import * as data from '../data';
 export function Wrapper() {
   return (
     <sidebar className={styles.sidebar}>
-      {data.bigBalance.map(({ title, amount, avarage }, index) => (
+      {data.bigBalance.map(({ title, amount, avarage, cardColor }, index) => (
         <BigBalanceCard
           key={index} 
           title={title}
           amount={amount}
           avarage={avarage} 
+          cardColor={cardColor} 
         />
       ))}
       {data.smallBalance.map(({ title, amount, percent }, index) => (

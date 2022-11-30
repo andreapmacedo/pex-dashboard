@@ -30,18 +30,21 @@ export const menuElements = [
 export const bigBalance = [
   {
     title: 'receita total',
-    amount: 10000,
-    avarage: 1000,
+    amount: 312321,
+    avarage: 67.2,
+    cardColor: 'red'
   },
   {
     title: 'lucro total',
-    amount: 10000,
-    avarage: 1000,
+    amount: 74421,
+    avarage: 42.3,
+    cardColor: 'blue'
   },
   {
     title: 'lucro por venda',
-    amount: 10000,
-    avarage: 1000,
+    amount: 3.12,
+    avarage: 12.4,
+    cardColor: 'green'
   },
 ];
 
@@ -80,19 +83,24 @@ export const smallBalance = [
 
 export const midBalance = [
   {
-    title: 'lucro total',
-    amount: 10000,
-    percent: 0.5,
+    title: 'Cotações realizadas',
+    amount: 312.321,
+    percent: 15.3,
   },
   {
-    title: 'lucro total',
-    amount: 10000,
-    percent: 0.6,
+    title: 'Vendas finalizadas',
+    amount: 212.012,
+    percent: 15.3,
   },
   {
-    title: 'lucro total',
-    amount: 10000,
-    percent: 0.3,
+    title: 'Cotações não concluídas',
+    amount: 42.021,
+    percent: 15.3,
+  },
+  {
+    title: 'Cotações não respondidas',
+    amount: 3.122,
+    percent: 15.3,
   },
 ];
 
