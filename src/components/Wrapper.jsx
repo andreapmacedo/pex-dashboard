@@ -20,23 +20,25 @@ export function Wrapper() {
         ))}
       </div>
       <div className={styles.wrapperIn}>
-        {data.smallBalance.map(({ title, amount, percent, extraData, format }, index) => (
+        {data.smallBalance.map(({ title, amount, percent, value, extraData, format }, index) => (
           <SmallBalanceCard
             key={index} 
             title={title}
             amount={amount}
             percent={percent} 
+            value={value} 
             extraData={extraData}
             format={format}
           />
         ))}
       </div>
       <div className={styles.wrapperIn}>
-        {data.midBalance.map(({ title, amount, percent }, index) => (
+        {data.midBalance.map(({ title, amount, value, percent }, index) => (
           <MidBalanceCard
             key={index} 
             title={title}
             amount={amount}
+            value={value}
             percent={percent} 
           />
         ))}

@@ -1,7 +1,7 @@
 import { FormatNoFraction, FormatPtBr } from '../utils';
 import styles from './SmalllBalanceCard.module.css';
 
-export function SmallBalanceCard({ title, amount, percent, extraData, format }) {
+export function SmallBalanceCard({ title, amount, percent, value, extraData, format }) {
 
   return (
     <div className={styles.smallBalanceCard}>
@@ -12,7 +12,20 @@ export function SmallBalanceCard({ title, amount, percent, extraData, format }) 
         {format === 'ptBr' && <h2>{`R$ ${FormatPtBr(amount)}`}</h2> }
         {extraData && <p>{extraData}</p>}
       </div>
-      <p className={percent > 0 ? styles.green : styles.red } >{percent}</p>
+      <div className={styles.percentContainer}>
+        {
+          percent > 0 
+          ?
+            <p className={styles.green } >
+              {`+${percent}%`}
+            </p>
+          :
+            <p className={styles.red } >
+              {`${percent}%`}
+            </p>
+        }
+        <p className={percent > 0 ? styles.green : styles.red } >{`(+${value})`}</p>
+      </div>
     </div>
   );
 }

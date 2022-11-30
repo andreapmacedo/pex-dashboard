@@ -18,6 +18,7 @@
 
 .bigBalanceCard h4{
   color: var(--white-smoke);
+  font-size: 1.3rem;
   padding: 0 1rem;
   padding-bottom: 1.5rem;
 }
@@ -33,6 +34,7 @@
 .bigBalanceCard p{
   color: var(--white-smoke);
   padding: 0 1rem;
+  font-size: 0.8rem;
 }
 
 .bigBalanceCard hr{

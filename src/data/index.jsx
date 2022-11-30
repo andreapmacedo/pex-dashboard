@@ -53,30 +53,35 @@ export const smallBalance = [
     title: 'Clientes ativos',
     amount: 3312,
     percent: 2.6,
+    value: 12,
     format: 'noFraction'
   },
   {
     title: 'Novos clientes',
     amount: 12,
     percent: 15.3,
+    value: 2,
     format: 'noFraction'
   },
   {
     title: 'Clientes adicionados',
     amount: 42,
     percent: 42.6,
+    value: 8,
     format: 'noFraction'
   },
   {
     title: 'LTV',
     amount: 142.32,
     percent: -22.6,
+    value: 'R$12.20',
     format: 'ptBr'
   },
   {
     title: 'Turnover',
     amount: 24.3,
     percent: 42.6,
+    value: 3,
     format: 'percent',
     extraData: 32,
   },
@@ -84,6 +89,7 @@ export const smallBalance = [
     title: 'Turnover recuperado',
     amount: 54.42,
     percent: 32.6,
+    value: 6,
     format: 'percent',
     extraData: 12,
   },
@@ -94,21 +100,26 @@ export const midBalance = [
     title: 'Cotações realizadas',
     amount: 312.321,
     percent: 15.3,
+    value: 223,
   },
   {
     title: 'Vendas finalizadas',
     amount: 212.012,
     percent: 15.3,
+    value: 223,
   },
   {
     title: 'Cotações não concluídas',
     amount: 42.021,
     percent: 15.3,
+    value: 223,
   },
   {
     title: 'Cotações não respondidas',
     amount: 3.122,
     percent: 15.3,
+    value: 223,
+    extraData: '3%',
   },
 ];
 
