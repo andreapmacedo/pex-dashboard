@@ -51,33 +51,41 @@ export const bigBalance = [
 export const smallBalance = [
   {
     title: 'Clientes ativos',
-    amount: 10000,
+    amount: 3312,
     percent: 2.6,
+    format: 'noFraction'
   },
   {
     title: 'Novos clientes',
-    amount: 10000,
+    amount: 12,
     percent: 15.3,
+    format: 'noFraction'
   },
   {
     title: 'Clientes adicionados',
-    amount: 10000,
+    amount: 42,
     percent: 42.6,
+    format: 'noFraction'
   },
   {
     title: 'LTV',
-    amount: 10000,
+    amount: 142.32,
     percent: -22.6,
+    format: 'ptBr'
   },
   {
     title: 'Turnover',
-    amount: 10000,
+    amount: 24.3,
     percent: 42.6,
+    format: 'percent',
+    extraData: 32,
   },
   {
     title: 'Turnover recuperado',
-    amount: 10000,
+    amount: 54.42,
     percent: 32.6,
+    format: 'percent',
+    extraData: 12,
   },
 ];
 

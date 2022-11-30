@@ -4,20 +4,20 @@
   --gray-100: #e1e1e6;
   --gray-200: #E9EDF7;
   --gray-300: #c4c4cc;
-  --gray-400: #8d8d99;
+  --gray-400: #A3AED0;
   --gray-600: #323238;
   --gray-700: #29292e;
   --gray-800: #202024;
   --gray-900: #121214;
 
   --green-300: #65D4AC;
-  --green-500: #00875f;
+  --green-500: #05CD99 ;
 
   --red-300: #EC7A7A;
-  --red-500: #F75A68;
+  --red-500: #CD0505;
   
   --blue-300: #7A85EC;
-  --blue-500: #1445bf;
+  --blue-800: #2B3674;
 }
 
 :focus {
