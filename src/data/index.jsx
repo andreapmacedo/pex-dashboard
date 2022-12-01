@@ -8,22 +8,27 @@ export const menuElements = [
   {
     text: 'Dashboard',
     icon: home,
+    focus: true,
   },
   {
     text: 'Vendas',
     icon: salles,
+    focus: false,
   },
   {
     text: 'Relatórios',
     icon: reports,
+    focus: false,
   },
   {
     text: 'Lojas parceiras',
     icon: partners,
+    focus: false,
   },
   {
     text: 'Clientes',
     icon: customers,
+    focus: false,
   },
 ];
 
