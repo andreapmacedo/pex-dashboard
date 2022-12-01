@@ -1,0 +1,23 @@
+.filterMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 16px;
+  min-width: 32.25rem;
+  gap: 1rem;
+}
+
+.filterMenu h2 {
+  color: var(--blue-800);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+
+.filterMenu h4 {
+  color: var(--gray-400);
+  padding-left: 2rem;
+  font-size: 0.8rem;
+}

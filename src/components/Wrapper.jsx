@@ -1,4 +1,5 @@
 import styles from './Wrapper.module.css';
+import { SearchMenu } from './SearchMenu';
 import { MidBalanceCard } from './MidBalanceCard';
 import { BigBalanceCard } from './BigBalanceCard';
 import { SmallBalanceCard } from './SmallBalanceCard';
@@ -8,6 +9,9 @@ import * as data from '../data';
 export function Wrapper() {
   return (
     <div className={styles.wrapperOut}>
+      <div className={styles.wrapper}>
+        <SearchMenu />
+      </div>
       <div className={styles.wrapperIn}>
         {data.bigBalance.map(({ title, amount, avarage, cardColor }, index) => (
           <BigBalanceCard

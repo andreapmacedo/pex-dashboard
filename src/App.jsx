@@ -1,7 +1,5 @@
 import  { Sidebar } from  './components/Sidebar' ;
 import { Wrapper } from  './components/Wrapper' ;
-import { FilterMenu } from  './components/FilterMenu' ;
-import { SearchMenu } from './components/SearchMenu';
 import styles from './App.module.css';
 import './global.css';
 

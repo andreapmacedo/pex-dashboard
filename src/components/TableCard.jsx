@@ -7,7 +7,7 @@ export function TableCard({ title, sub, tableData, tableHeader }) {
     <div className={styles.tableCard}>
       <h2>{title}</h2>
       <h4>{sub}</h4>
-      <GenericTable tableData = { tableData } tableHeader = {tableHeader} />
+      <GenericTable tableData = { tableData } tableHeader = { tableHeader } />
     </div>
   );
 }
