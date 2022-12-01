@@ -1,12 +1,31 @@
-import styles from './Sidebar.module.css';
+import { FormatNoFraction, FormatPtBr } from '../utils';
+import styles from './SmalllBalanceCard.module.css';
 
-export function SmallBalanceCard({ title, amount, percent }) {
+export function SmallBalanceCard({ title, amount, percent, value, extraData, format }) {
 
   return (
-    <sidebar className={styles.sidebar}>
-      <h1>{title}</h1>
-      <h1>{amount}</h1>
-      <h1>{percent}</h1>
-    </sidebar>
+    <div className={styles.smallBalanceCard}>
+      <h4>{title}</h4>
+      <div className={styles.amountContainer}>
+        {format === 'noFraction' && <h2>{FormatNoFraction(amount)}</h2> }
+        {format === 'percent' && <h2>{`${FormatPtBr(amount)}%`}</h2> }
+        {format === 'ptBr' && <h2>{`R$ ${FormatPtBr(amount)}`}</h2> }
+        {extraData && <p>{extraData}</p>}
+      </div>
+      <div className={styles.percentContainer}>
+        {
+          percent > 0 
+          ?
+            <p className={styles.green } >
+              {`+${percent}%`}
+            </p>
+          :
+            <p className={styles.red } >
+              {`${percent}%`}
+            </p>
+        }
+        <p className={percent > 0 ? styles.green : styles.red } >{`(+${value})`}</p>
+      </div>
+    </div>
   );
 }

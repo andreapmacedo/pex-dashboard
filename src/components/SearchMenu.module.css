@@ -1,0 +1,31 @@
+.searchMenu {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 38px;
+  min-width: 26.375rem;
+  min-height: 3.81rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  gap: 1rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0 1rem;
+  box-shadow: 10px 13px 21px 8px rgba(54,92,156,0.075);
+}
+
+.searchMenu input {
+  background: url(../assets/search_icon.svg) no-repeat scroll 20px 14px;
+  background-color: var(--blue-100);
+  color: var(--blue-400);
+  border: none;
+  border-radius: 38px;
+  min-width: 13.375rem;
+  min-height: 2.5625rem;
+  padding-left: 2.5rem;
+}
+
+input::placeholder {
+  color: var(--blue-400);
+}

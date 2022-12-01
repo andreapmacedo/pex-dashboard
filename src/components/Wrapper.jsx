@@ -1,4 +1,7 @@
-import styles from './Sidebar.module.css';
+import styles from './Wrapper.module.css';
+import { Header } from './Header';
+import { SearchMenu } from './SearchMenu';
+import { FilterMenu } from './FilterMenu';
 import { MidBalanceCard } from './MidBalanceCard';
 import { BigBalanceCard } from './BigBalanceCard';
 import { SmallBalanceCard } from './SmallBalanceCard';
@@ -7,55 +10,72 @@ import * as data from '../data';
 
 export function Wrapper() {
   return (
-    <sidebar className={styles.sidebar}>
-      {data.bigBalance.map(({ title, amount, avarage }, index) => (
-        <BigBalanceCard
-          key={index} 
-          title={title}
-          amount={amount}
-          avarage={avarage} 
-        />
-      ))}
-      {data.smallBalance.map(({ title, amount, percent }, index) => (
-        <SmallBalanceCard
-          key={index} 
-          title={title}
-          amount={amount}
-          percent={percent} 
-        />
-      ))}
-      {data.midBalance.map(({ title, amount, percent }, index) => (
-        <MidBalanceCard
-          key={index} 
-          title={title}
-          amount={amount}
-          percent={percent} 
-        />
-      ))}
-      {data.tableDataA.map(({ club, customers, value }, index) => (
+    <div className={styles.wrapperOut}>
+      <div className={styles.wrapper}>
+        <Header />
+      </div>
+      <div className={styles.wrapper}>
+        <FilterMenu />
+      </div>
+      <div className={styles.wrapper}>
+        <SearchMenu />
+      </div>
+      <div className={styles.wrapperIn}>
+        {data.bigBalance.map(({ title, amount, avarage, cardColor }, index) => (
+          <BigBalanceCard
+            key={index} 
+            title={title}
+            amount={amount}
+            avarage={avarage} 
+            cardColor={cardColor} 
+          />
+        ))}
+      </div>
+      <div className={styles.wrapperIn}>
+        {data.smallBalance.map(({ title, amount, percent, value, extraData, format }, index) => (
+          <SmallBalanceCard
+            key={index} 
+            title={title}
+            amount={amount}
+            percent={percent} 
+            value={value} 
+            extraData={extraData}
+            format={format}
+          />
+        ))}
+      </div>
+      <div className={styles.wrapperIn}>
+        {data.midBalance.map(({ title, amount, value, extraData, percent }, index) => (
+          <MidBalanceCard
+            key={index} 
+            title={title}
+            amount={amount}
+            value={value}
+            extraData={extraData}
+            percent={percent} 
+          />
+        ))}
+      </div>
+      <div className={styles.wrapperIn}>
         <TableCard
-          key={index} 
-          club={club}
-          customers={customers}
-          value={value} 
-        />
-      ))}
-      {data.tableDataB.map(({ club, customers, value }, index) => (
+          title={'Planos'}
+          sub={'123 planos ativos'}
+          tableData={data.tableDataA}
+          tableHeader={'PREÇO'}                        
+          />
         <TableCard
-          key={index} 
-          club={club}
-          customers={customers}
-          value={value} 
+          title={'Categorias'}
+          sub={'4 categorias em uso'} 
+          tableData={data.tableDataB}
+          tableHeader={'PREÇO MÉDIO'}                        
         />
-      ))}
-      {data.tableDataC.map(({ club, customers, value }, index) => (
         <TableCard
-          key={index} 
-          club={club}
-          customers={customers}
-          value={value} 
+          title={'Tipos de planos'}
+          sub={'2 tipos em uso'} 
+          tableData={data.tableDataC}
+          tableHeader={'PREÇO MÉDIO'}                        
         />
-      ))}
-    </sidebar>
+      </div>
+    </div>
   );
 }

@@ -1,12 +1,13 @@
-import styles from './Sidebar.module.css';
+import styles from './TableCard.module.css';
+import { GenericTable } from './GenericTable';
 
-export function TableCard({ club, customers, value }) {
+export function TableCard({ title, sub, tableData, tableHeader }) {
 
   return (
-    <sidebar className={styles.sidebar}>
-      <h1>{club}</h1>
-      <h1>{customers}</h1>
-      <h1>{value}</h1>
-    </sidebar>
+    <div className={styles.tableCard}>
+      <h2>{title}</h2>
+      <h4>{sub}</h4>
+      <GenericTable tableData = { tableData } tableHeader = { tableHeader } />
+    </div>
   );
 }

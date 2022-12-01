@@ -29,70 +29,97 @@ export const menuElements = [
 
 export const bigBalance = [
   {
-    title: 'receita total',
-    amount: 10000,
-    avarage: 1000,
+    title: 'Receita total',
+    amount: 312321,
+    avarage: 67.2,
+    cardColor: '#EC7A7A'
   },
   {
-    title: 'lucro total',
-    amount: 10000,
-    avarage: 1000,
+    title: 'Lucro total',
+    amount: 74421,
+    avarage: 42.3,
+    cardColor: '#7A85EC'
   },
   {
-    title: 'lucro por venda',
-    amount: 10000,
-    avarage: 1000,
+    title: 'Lucro por venda',
+    amount: 3.12,
+    avarage: 12.4,
+    cardColor: '#65D4AC'
   },
 ];
 
 export const smallBalance = [
   {
     title: 'Clientes ativos',
-    amount: 10000,
+    amount: 3312,
     percent: 2.6,
+    value: 12,
+    format: 'noFraction'
   },
   {
     title: 'Novos clientes',
-    amount: 10000,
+    amount: 12,
     percent: 15.3,
+    value: 2,
+    format: 'noFraction'
   },
   {
     title: 'Clientes adicionados',
-    amount: 10000,
+    amount: 42,
     percent: 42.6,
+    value: 8,
+    format: 'noFraction'
   },
   {
     title: 'LTV',
-    amount: 10000,
+    amount: 142.32,
     percent: -22.6,
+    value: 'R$12.20',
+    format: 'ptBr'
   },
   {
     title: 'Turnover',
-    amount: 10000,
+    amount: 24.3,
     percent: 42.6,
+    value: 3,
+    format: 'percent',
+    extraData: 32,
   },
   {
     title: 'Turnover recuperado',
-    amount: 10000,
+    amount: 54.42,
     percent: 32.6,
+    value: 6,
+    format: 'percent',
+    extraData: 12,
   },
 ];
 
 export const midBalance = [
   {
-    title: 'lucro total',
-    amount: 10000,
-    percent: 0.5,
+    title: 'Cotações realizadas',
+    amount: 312.321,
+    percent: 15.3,
+    value: 223,
   },
   {
-    title: 'lucro total',
-    amount: 10000,
-    percent: 0.6,
+    title: 'Vendas finalizadas',
+    amount: 212.012,
+    percent: 15.3,
+    value: 223,
   },
   {
-    title: 'lucro total',
-    amount: 10000,
-    percent: 0.3,
+    title: 'Cotações não concluídas',
+    amount: 42.021,
+    percent: 15.3,
+    value: 223,
+  },
+  {
+    title: 'Cotações não respondidas',
+    amount: 3.122,
+    percent: 15.3,
+    value: 223,
+    extraData: '3%',
   },
 ];
 
@@ -121,17 +148,17 @@ export const tableDataA = [
 
 export const tableDataB = [
   {
-    club: 6,
+    club: '6 vendas',
     customers: 312,
     value: 123.90,
   },
   {
-    club: 12,
+    club: '12 vendas',
     customers: 312,
     value: 123.90,
   },
   {
-    club: 24,
+    club: '24 vendas',
     customers: 312,
     value: 123.90,
   },

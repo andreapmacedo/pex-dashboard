@@ -4,7 +4,7 @@ import { menuElements } from '../data';
 
 export function Sidebar() {
   return (
-    <sidebar className={styles.sidebar}>
+    <div className={styles.sidebar}>
       <img src={pexlogo} alt="Logotipo Pex Construção" />
       {menuElements.map(({text, icon}, index) => (
         <div key={index} className={styles.menuElement}>
@@ -12,6 +12,6 @@ export function Sidebar() {
           <span>{text}</span>
         </div>
       ))}
-    </sidebar>
+    </div>
   );
 }

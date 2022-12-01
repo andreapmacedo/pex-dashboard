@@ -1,0 +1,75 @@
+.midBalanceCard {
+  background-color: var(--white);
+  border-radius: 16px;
+  /* min-width: 24.1875rem; */
+  min-width: 23.875rem;
+  min-height: 12.25rem;
+  gap: 1rem;
+}
+
+.midBalanceCard img{
+  padding: 1rem;
+}
+
+.midBalanceCard h2 {
+  color: var(--blue-800);
+  font-size: 2rem;
+  font-weight: 700;
+  padding-left: 1rem;
+}
+
+.midBalanceCard h4 {
+  color: var(--gray-400);
+  padding: 0 1rem;
+  padding-bottom: 0.8rem;
+  font-size: 0.8rem;
+}
+
+.midBalanceCard p {
+  color: var(--blue-800);
+}
+
+.midBalanceCard .amountContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.midBalanceCard .amountContainer p {
+  padding: 0 ;
+  color: var(--gray-400);
+  padding-bottom: 0.35rem;
+  padding-left: 0.35rem;
+}
+
+.midBalanceCard .green {
+  color: var(--green-500);
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.midBalanceCard .red {
+  color: var(--red-500);
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: bolder;
+  font-size: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+
+.midBalanceCard .red:nth-child(2) {
+  padding: 0;
+}
+
+.midBalanceCard .green:nth-child(2) {
+  padding: 0;
+}
+
+
+.midBalanceCard .percentContainer {
+  display: flex;
+  flex-direction: row;
+}

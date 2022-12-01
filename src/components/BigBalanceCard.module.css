@@ -1,0 +1,45 @@
+.bigBalanceCard {
+  border-radius: 16px;
+  min-width: 23.75rem;
+  min-width: 24rem;
+  min-height: 19.375rem;
+  gap: 1rem;
+}
+
+.bigBalanceCard img{
+  padding: 1rem;
+}
+
+.bigBalanceCard h1{
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0 1rem;
+}
+
+.bigBalanceCard h4{
+  color: var(--white-smoke);
+  font-size: 1.3rem;
+  padding: 0 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.bigBalanceCard h3{
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  padding-top: 1.5rem;
+}
+
+.bigBalanceCard p{
+  color: var(--white-smoke);
+  padding: 0 1rem;
+  font-size: 0.8rem;
+}
+
+.bigBalanceCard hr{
+  color: var(--white);
+  size: 100%;
+  border-color: var(--white);
+}
