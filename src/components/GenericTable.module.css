@@ -39,7 +39,6 @@
 .genericTable th:nth-child(2) {
   color: var(--gray-400);
   text-align: right;
-  
 }
 
 .genericTable th:nth-child(3) {

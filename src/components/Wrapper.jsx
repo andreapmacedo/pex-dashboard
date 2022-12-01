@@ -1,4 +1,5 @@
 import styles from './Wrapper.module.css';
+import { Header } from './Header';
 import { SearchMenu } from './SearchMenu';
 import { MidBalanceCard } from './MidBalanceCard';
 import { BigBalanceCard } from './BigBalanceCard';
@@ -9,6 +10,9 @@ import * as data from '../data';
 export function Wrapper() {
   return (
     <div className={styles.wrapperOut}>
+      <div className={styles.wrapper}>
+        <Header />
+      </div>
       <div className={styles.wrapper}>
         <SearchMenu />
       </div>
