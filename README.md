@@ -3,7 +3,7 @@
 Link para acessar online: https://pex-webapp.up.railway.app/
 
 Este projeto é um modelo de demonstração de dashboard construído com dados em hardcode. 
-Embora os dados estejam estáticos, o projeto a implementação foi construida para receber dados dinâmicos.
+Embora os dados estejam estáticos, a implementação permite receber dados dinâmicos.
 
 :rocket:  Tecnologias
 
