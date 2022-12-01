@@ -1,4 +1,4 @@
-import salles from '../assets/salles.svg';
+import sales from '../assets/sales.svg';
 import customers from '../assets/customers.svg';
 import partners from '../assets/partners.svg';
 import reports from '../assets/reports.svg';
@@ -12,7 +12,7 @@ export const menuElements = [
   },
   {
     text: 'Vendas',
-    icon: salles,
+    icon: sales,
     focus: false,
   },
   {
