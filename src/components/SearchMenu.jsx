@@ -12,10 +12,10 @@ export function SearchMenu() {
         type='text'
         placeholder='Buscar'
       />
-      <img src={notifications_none} alt={'icon dollar'} />
-      <img src={moon_solid} alt={'icon dollar'} />
-      <img src={info_outline} alt={'icon dollar'} />
-      <img src={avatar} alt={'icon dollar'} />
+      <img src={notifications_none} alt={'icon'} />
+      <img src={moon_solid} alt={'icon'} />
+      <img src={info_outline} alt={'icon'} />
+      <img src={avatar} alt={'icon'} />
     </div>
   );
 }
