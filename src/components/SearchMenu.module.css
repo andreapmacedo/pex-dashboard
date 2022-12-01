@@ -3,22 +3,20 @@
   align-items: center;
   background-color: var(--white);
   border-radius: 38px;
-  max-width: 40.25rem;
+  min-width: 26.375rem;
   min-height: 3.81rem;
   margin-bottom: 2rem;
   margin-left: 1rem;
   gap: 1rem;
-}
-
-.searchMenu h4 {
-  color: var(--blue-200);
-  padding-left: 2rem;
-  padding-right: 1rem;
-  font-size: 0.8rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0 1rem;
+  box-shadow: 10px 13px 21px 8px rgba(54,92,156,0.075);
 }
 
 .searchMenu input {
-  background: url(../assets/date_icon.svg) no-repeat scroll 20px 14px;
+  background: url(../assets/search_icon.svg) no-repeat scroll 20px 14px;
   background-color: var(--blue-100);
   color: var(--blue-400);
   border: none;
