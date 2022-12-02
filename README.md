@@ -22,8 +22,6 @@ Embora os dados estejam estáticos, a implementação permite receber dados din�
  ‍💻 Softwares necessários
 
 - NPM
-- Node
-- vite
 
  :arrow_down: Instalando dependências
 
@@ -34,7 +32,7 @@ npm install
  :zap: Executando o projeto localmente
 
 ```bash
- $ npm run dev
+ npm run dev
  ```
   - Acesse o link que será fornecedido pelo vite no terminal.
   - Caso queira alterar a porta, basta alterar o arquivo `vite.config.js` na raiz do projeto.
